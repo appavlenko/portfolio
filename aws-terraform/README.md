@@ -6,10 +6,6 @@ This project demonstrates how to deploy and manage AWS infrastructure using Terr
 
 The goal of this project is to provide a reusable Terraform configuration that can be used to quickly set up a basic AWS infrastructure. This setup can serve as a foundation for more complex deployments or as a learning tool for understanding Terraform and AWS infrastructure.
 
-## Architecture Diagram
-
-(Insert diagram here if available)
-
 ## Files
 
 - **main.tf**: The main Terraform file that references the modules for VPC, EC2, and S3.
