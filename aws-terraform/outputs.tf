@@ -1,9 +1,19 @@
 output "vpc_id" {
   description = "The ID of the VPC"
-  value       = module.vpc.vpc_id
+  value       = aws_vpc.main.id
 }
 
-output "ec2_public_ip" {
-  description = "The public IP address of the EC2 instance"
-  value       = module.ec2.instance_public_ip
+output "public_subnet_id" {
+  description = "The ID of the public subnet"
+  value       = aws_subnet.public.id
+}
+
+output "ec2_web_public_ip" {
+  description = "The public IP address of the web server"
+  value       = aws_instance.web.public_ip
+}
+
+output "db_private_ip" {
+  description = "The private IP address of the DB server"
+  value       = aws_instance.db.private_ip
 }
