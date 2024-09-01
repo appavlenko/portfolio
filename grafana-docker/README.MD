@@ -27,11 +27,14 @@ This project demonstrates how to set up a monitoring solution using Prometheus a
     docker-compose up -d
 
 3. **Access Grafana**:
+
   Open your browser and navigate to http://localhost:3000.
   Log in with admin as both username and password (you can change this in the environment variables).
 
 4. **Explore Prometheus**:
+
    Prometheus will be available at http://localhost:9090
 
 5. **View dashboards**:
+
 Grafana dashboards will be automatically provisioned. You can create or modify dashboards to fit your needs.
