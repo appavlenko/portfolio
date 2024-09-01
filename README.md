@@ -22,3 +22,12 @@ Bash scripts I use for managing tasks in a Zimbra mail server.
 
 <br/>
 
+## [Aws-terraform](./aws-terraform/)
+
+The goal of this project is to provide a reusable Terraform configuration that can be used to quickly set up a foundational AWS infrastructure
+
+<br/>
+
+## [grafana-docker](./grafana-docker/)
+
+Set up a monitoring solution using Prometheus and Grafana With Docker
