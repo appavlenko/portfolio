@@ -20,4 +20,4 @@ This project contains Ansible playbooks to automate the configuration of a web s
 
 2. **Run the playbook**:
    ```bash
-   - ansible-playbook -i inventory playbook.yml
+   ansible-playbook -i inventory playbook.yml
