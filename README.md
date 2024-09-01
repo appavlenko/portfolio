@@ -12,4 +12,4 @@ Here are some scripts I use at work to automate my daily tasks. Most of these sc
 
 ## [bash](./bash/README.MD)
 
-Bash scripts I use for managing tasks in a Zimbra email environment.
+Bash scripts I use for managing tasks in a Zimbra mail server.
