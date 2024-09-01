@@ -7,3 +7,9 @@ This repository showcases my DevOps projects, along with the tools and scripts I
 ## [PowerShell-scripts](./powershell-scripts/README.MD)
 
 Here are some scripts I use at work to automate my daily tasks. Most of these scripts are currently focused on Office 365 and Graph API.
+
+<br/>
+
+## [bash](./bash/README.MD)
+
+Bash scripts I use for managing tasks in a Zimbra email environment.
