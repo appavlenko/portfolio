@@ -1,0 +1,28 @@
+- name: Install Apache (HTTPD)
+  apt:
+    name: apache2
+    state: present
+    update_cache: yes
+
+- name: Deploy Apache configuration
+  copy:
+    src: httpd.conf
+    dest: /etc/apache2/sites-available/000-default.conf
+  notify:
+    - Restart Apache
+
+- name: Enable mod_rewrite
+  apache2_module:
+    name: rewrite
+    state: present
+
+- name: Ensure Apache is running
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+
+- name: Enable site configuration
+  command: a2ensite 000-default.conf
+  notify:
+    - Restart Apache
