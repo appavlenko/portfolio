@@ -1,9 +1,27 @@
-resource "aws_instance" "app" {
-  ami           = "ami-0c55b159cbfafe1f0"
+resource "aws_instance" "web" {
+  ami           = data.aws_ami.ubuntu_latest.id
   instance_type = "t2.micro"
-  subnet_id     = module.vpc.public_subnet_id
+  subnet_id     = aws_subnet.public.id
+  key_name      = "terraform-key"
+
+  vpc_security_group_ids = [aws_security_group.main.id]
+  associate_public_ip_address = true
 
   tags = {
-    Name = "AppServer"
+    Name = "Web-Server"
+  }
+}
+
+resource "aws_instance" "db" {
+  ami           = data.aws_ami.ubuntu_latest.id
+  instance_type = "t2.micro"
+  subnet_id     = aws_subnet.private.id
+  key_name      = "terraform-key"
+
+  vpc_security_group_ids = [aws_security_group.main.id]
+  associate_public_ip_address = false
+
+  tags = {
+    Name = "DB-Server"
   }
 }
