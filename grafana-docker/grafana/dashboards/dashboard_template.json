@@ -1,0 +1,27 @@
+{
+  "dashboard": {
+    "title": "New Dashboard",
+    "panels": [],
+    "templating": {
+      "list": [
+        {
+          "type": "datasource",
+          "name": "Prometheus",
+          "query": "prometheus",
+          "current": {
+            "text": "Prometheus",
+            "value": "prometheus"
+          }
+        }
+      ]
+    },
+    "annotations": {
+      "list": []
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "schemaVersion": 16
+  }
+}
