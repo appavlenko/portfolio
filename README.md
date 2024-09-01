@@ -28,6 +28,12 @@ The goal of this project is to provide a reusable Terraform configuration that c
 
 <br/>
 
-## [grafana-docker](./grafana-docker/)
+## [Grafana-docker](./grafana-docker/)
 
 Set up a monitoring solution using Prometheus and Grafana With Docker
+
+<br/>
+
+## [Ansible-server-setup](./ansible-server-setup/)
+
+This project contains Ansible playbooks to automate the configuration of a web server
